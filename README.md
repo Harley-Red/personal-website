@@ -48,3 +48,11 @@ npm start
 ```
 npm run commit
 ```
+
+## 📚 Todo
+
+* [ ]  Add portfolio & project sections
+* [ ]  Optimize SEO & metadata
+* [ ]  Add deployment configuration (e.g., Vercel)
+* [ ]  Add dark/light mode toggle
+* [ ]  Add contact form with backend support
