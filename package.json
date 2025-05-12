@@ -1,0 +1,47 @@
+{
+  "name": "personal-website",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "commit": "git-cz",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.509.0",
+    "next": "15.3.2",
+    "next-intl": "^4.1.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-icons": "^5.5.0",
+    "tailwind-merge": "^3.3.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.8.1",
+    "@commitlint/config-conventional": "^19.8.1",
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "commitizen": "^4.3.1",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^9",
+    "eslint-config-next": "15.3.2",
+    "husky": "^9.1.7",
+    "tailwindcss": "^4",
+    "tw-animate-css": "^1.2.9",
+    "typescript": "^5"
+  },
+  "packageManager": "yarn@3.2.2+sha512.15bb87fe7c77cb6f177c82458a31d0e25b3e979d8b2a6552602787273b6e8a492fc7c0e9cf66507dcf3e5e90aefe43776a8bd2ead5577320f36571a329e33e55",
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}

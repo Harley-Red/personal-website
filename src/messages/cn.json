@@ -1,0 +1,43 @@
+{
+  "HomePage": {
+    "about": {
+      "title": "关于我",
+      "description": "你好，我是一名前端开发工程师，专注于 React、Vue 和现代 Web 技术。我正在积极寻找新的机会，同时也对自由职业项目保持开放态度。"
+    },
+    "projects": {
+      "title": "项目展示",
+      "items": {
+        "project1": {
+          "title": "OKKI CRM 系统",
+          "description": "主导邮件模块开发，支持微前端架构，服务中大型客户。"
+        },
+        "project2": {
+          "title": "微伴助手",
+          "description": "面向企业客户的数字化运营平台，集成营销、客服和客户管理功能。"
+        }
+      }
+    },
+    "resume": {
+      "title": "我的简历",
+      "download": "下载简历"
+    },
+    "contact": {
+      "title": "联系我",
+      "email": "hongyan.red@gmail.com",
+      "github": "https://github.com/Harley-Red",
+      "linkedin": "linkedin.com/in/harley-hong"
+    },
+    "footer": {
+      "copyright": "© {year} YourName. 保留所有权利。"
+    }
+  },
+  "Header": {
+    "title": "洪妍",
+    "links": {
+      "about": "关于我",
+      "projects": "我的项目",
+      "resume": "简历",
+      "contact": "联系我"
+    }
+  }
+}

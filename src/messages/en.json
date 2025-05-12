@@ -1,0 +1,43 @@
+{
+  "HomePage": {
+    "about": {
+      "title": "About Me",
+      "description": "Hello, I am a front-end developer specializing in React, Vue, and modern web technologies. I am actively seeking new opportunities and open to freelance projects."
+    },
+    "projects": {
+      "title": "Projects",
+      "items": {
+        "project1": {
+          "title": "OKKI CRM System",
+          "description": "Led the development of the email module, supporting a micro-frontend architecture for medium to large clients."
+        },
+        "project2": {
+          "title": "Weiband Assistant",
+          "description": "A digital operation platform for enterprise clients, integrating marketing, customer service, and client management features."
+        }
+      }
+    },
+    "resume": {
+      "title": "My Resume",
+      "download": "Download Resume"
+    },
+    "contact": {
+      "title": "Contact Me",
+      "email": "hongyan.red@gmail.com",
+      "github": "https://github.com/Harley-Red",
+      "linkedin": "linkedin.com/in/harley-hong"
+    },
+    "footer": {
+      "copyright": "© {year} YourName. All rights reserved."
+    }
+  },  
+  "Header": {
+    "title": "Yan Hong",
+    "links": {
+      "about": "About Me",
+      "projects": "My Projects",
+      "resume": "Resume",
+      "contact": "Contact Me"
+    }
+  }
+}
