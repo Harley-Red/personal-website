@@ -1,7 +1,6 @@
 import Header from '../../components/Header';
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 import { useTranslations } from 'next-intl';
-import { Link } from '@/src/i18n/navigation';
 
 export default function Home() {
   const t = useTranslations('HomePage');
