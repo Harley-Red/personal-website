@@ -1,9 +1,25 @@
+'use client';
+
 import Header from '../../components/Header';
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 import { useTranslations } from 'next-intl';
+import { useState, useRef, useEffect } from 'react';
 
 export default function Home() {
   const t = useTranslations('HomePage');
+  const [showDropdown, setShowDropdown] = useState(false);
+  const dropdownRef = useRef<HTMLDivElement>(null);
+
+  // 点击外部关闭下拉
+  useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+        setShowDropdown(false);
+      }
+    }
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
 
   return (
     <main className="bg-gray-50 min-h-screen text-gray-800">
@@ -26,14 +42,31 @@ export default function Home() {
       </section>
 
       <section id="resume" className="max-w-4xl mx-auto px-4 py-16">
-        <h2 className="text-3xl font-semibold mb-4">{t('resume.title')}</h2>
-        <a
-          href="/resume.pdf"
-          target="_blank"
-          className="inline-block bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition"
-        >
-          {t('resume.download')}
-        </a>
+        <h2 className="text-3xl font-semibold mb-8">{t('resume.title')}</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+          <a
+            href="/resume_cn.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block bg-white border border-blue-200 rounded-lg shadow-md hover:shadow-lg transition p-6 text-center group"
+          >
+            <div className="text-2xl font-bold mb-2 text-blue-700 group-hover:text-blue-900">
+              {t('resume.preview_cn')}
+            </div>
+            <div className="text-gray-500">{t('resume.desc_cn')}</div>
+          </a>
+          <a
+            href="/resume_en.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block bg-white border border-green-200 rounded-lg shadow-md hover:shadow-lg transition p-6 text-center group"
+          >
+            <div className="text-2xl font-bold mb-2 text-green-700 group-hover:text-green-900">
+              {t('resume.preview_en')}
+            </div>
+            <div className="text-gray-500">{t('resume.desc_en')}</div>
+          </a>
+        </div>
       </section>
 
       <section id="contact" className="max-w-4xl mx-auto px-4 py-16">

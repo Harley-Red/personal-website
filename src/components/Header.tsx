@@ -13,6 +13,7 @@ export default function Header() {
           <Link href="#projects" className="hover:text-blue-600">{t('links.projects')}</Link>
           <Link href="#resume" className="hover:text-blue-600">{t('links.resume')}</Link>
           <Link href="#contact" className="hover:text-blue-600">{t('links.contact')}</Link>
+          <Link href="/blog" className="hover:text-blue-600">{t('links.blog')}</Link>
         </nav>
       </div>
     </header>

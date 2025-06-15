@@ -19,7 +19,11 @@
     },
     "resume": {
       "title": "我的简历",
-      "download": "下载简历"
+      "download": "下载简历",
+      "preview_cn": "预览中文简历",
+      "preview_en": "预览英文简历",
+      "desc_cn": "点击卡片可在新标签页预览中文简历",
+      "desc_en": "Click to preview the English resume in a new tab"
     },
     "contact": {
       "title": "联系我",
@@ -28,7 +32,7 @@
       "linkedin": "linkedin.com/in/harley-hong"
     },
     "footer": {
-      "copyright": "© {year} YourName. 保留所有权利。"
+      "copyright": "© {year} YanHong. 保留所有权利。"
     }
   },
   "Header": {
@@ -37,7 +41,13 @@
       "about": "关于我",
       "projects": "我的项目",
       "resume": "简历",
-      "contact": "联系我"
+      "contact": "联系我",
+      "blog": "博客"
     }
+  },
+  "BlogPage": {
+    "title": "博客",
+    "description": "欢迎来到我的博客，这里分享我的思考与技术文章。",
+    "comingSoon": "博客内容即将上线……"
   }
 }
